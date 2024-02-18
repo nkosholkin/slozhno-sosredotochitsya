@@ -115,7 +115,7 @@
 
 /* заголовок */
 
-.header__title {
+.header__title, .footer__title {
   color: var(--heading-color, #db00ff);
   font-family: inherit;
   font-size: var(--font-size-mobile);
@@ -223,6 +223,10 @@
     margin-inline-start: -10px;
   }
 
+  .footer__title {
+    font-size: var(--font-size-desktop);
+  }
+
   .header__description {
     justify-self: end;
     inline-size: 364px;
@@ -322,7 +326,6 @@
     text-shadow: 4px 4px 0 var(--desktop-title-decor, #ff0070);
   }
 
-
   .main__section {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -335,4 +338,5 @@
   .main__section.collection {
     grid-template-rows: auto 260px 315px 428px;
   }
+
 }
