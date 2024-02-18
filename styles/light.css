@@ -10,41 +10,40 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  --background-color: #FFF1F7;
+  --background-color: #fff1f7;
   --background-image: url("../images/cover-image-light.png");
 
-  --heading-color: #FFC2E6;
+  --heading-color: #ffc2e6;
   --text-title: #353430;
   --text-color: #353430;
 
-  --accent-color: #FF8DCB;
+  --accent-color: #ff8dcb;
   --text-heading: #353430;
   --decorated-zone: #353430;
 
-  --desktop-title-decor: #FF0070;
+  --desktop-title-decor: #ff0070;
 
   --decorated-zone-hover: rgba(50, 49, 45, 0.4);
 
   .rec {
     visibility: hidden;
   }
-
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --background-color: #FFF1F7;
+    --background-color: #fff1f7;
     --background-image: url("../images/cover-image-light.png");
 
-    --heading-color: #FFC2E6;
+    --heading-color: #ffc2e6;
     --text-title: #353430;
     --text-color: #353430;
 
-    --accent-color: #FF8DCB;
+    --accent-color: #ff8dcb;
     --text-heading: #353430;
     --decorated-zone: #353430;
 
-    --desktop-title-decor: #FF0070;
+    --desktop-title-decor: #ff0070;
 
     --decorated-zone-hover: rgba(50, 49, 45, 0.4);
   }
@@ -52,6 +51,4 @@
   .rec {
     visibility: hidden;
   }
-
-
 }

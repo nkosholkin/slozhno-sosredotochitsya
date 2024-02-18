@@ -10,17 +10,16 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-  --heading-color: #DB00FF;
+  --heading-color: #db00ff;
   --text-title: #000028;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
 
-  --accent-color: #FF0070;
-  --text-heading: #FF0070;
-  --decorated-zone: #FF0070;
+  --accent-color: #ff0070;
+  --text-heading: #ff0070;
+  --decorated-zone: #ff0070;
 
   --background-color: #000028;
   --background-image: url("../images/cover-image-dark.png");
 
   --decorated-zone-hover: rgba(255, 0, 112, 0.4);
-
 }
