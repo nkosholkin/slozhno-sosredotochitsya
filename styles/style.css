@@ -20,7 +20,8 @@
 .header {
   display: grid;
   padding: 10px;
-  block-size: max(100vb, 668px);
+  /* block-size: max(100vb, 668px); */
+  min-block-size: 100vh
 }
 
 .decorated-zone {
@@ -311,6 +312,10 @@
   .header__description {
     inline-size: 491px;
     margin-block: 55px;
+  }
+
+  .title-decor {
+    text-shadow: 4px 4px 0 var(--desktop-title-decor, #ff0070);
   }
 
 
