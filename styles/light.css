@@ -25,9 +25,7 @@
 
   --decorated-zone-hover: rgba(50, 49, 45, 0.4);
 
-  .rec {
-    visibility: hidden;
-  }
+  --rec-visibility: hidden;
 }
 
 @media (prefers-color-scheme: light) {
@@ -46,9 +44,7 @@
     --desktop-title-decor: #ff0070;
 
     --decorated-zone-hover: rgba(50, 49, 45, 0.4);
-  }
 
-  .rec {
-    visibility: hidden;
+    --rec-visibility: hidden;
   }
 }

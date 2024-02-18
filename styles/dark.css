@@ -22,4 +22,7 @@
   --background-image: url("../images/cover-image-dark.png");
 
   --decorated-zone-hover: rgba(255, 0, 112, 0.4);
+
+  --rec-visibility: visible;
+
 }

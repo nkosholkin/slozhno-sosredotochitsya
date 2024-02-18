@@ -20,4 +20,6 @@
   --decorated-zone: #ff0070;
 
   --decorated-zone-hover: rgba(255, 0, 112, 0.4);
+
+  --rec-visibility: visible;
 }

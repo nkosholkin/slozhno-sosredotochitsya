@@ -20,8 +20,7 @@
 .header {
   display: grid;
   padding: 10px;
-  /* block-size: max(100vb, 668px); */
-  min-block-size: 100vh;
+  min-block-size: 100vb;
 }
 
 .decorated-zone {
@@ -32,6 +31,7 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
+  z-index: -1;
   inline-size: 25px;
   block-size: 25px;
 }
@@ -208,8 +208,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  block-size: max(100vb, 668px);
+  min-block-size: 100vb;
   padding: 40px 10px 10px;
+}
+
+.footer__title {
+  margin-block-end: 20px;
 }
 
 @media (width >= 768px) {
@@ -237,6 +241,7 @@
   .rec {
     inset-inline-end: 29px;
     inset-block-start: 20px;
+    visibility: var(--rec-visibility, visible);
   }
 
   .decorated-zone::before {
