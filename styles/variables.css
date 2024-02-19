@@ -22,4 +22,8 @@
   --decorated-zone-hover: rgb(255 0 112 / 0.4);
 
   --rec-visibility: visible;
+
+  --padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem); /*10 до 20 */
+  --margin-b: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem); /*40 до 60 */
+
 }

@@ -19,7 +19,7 @@
 
 .header {
   display: grid;
-  padding: 10px;
+  padding: var(--padding);
   min-block-size: 100vb;
 }
 
@@ -39,15 +39,19 @@
 .decorated-zone::before {
   border-inline-end: 1px solid var(--decorated-zone);
   border-block-start: 1px solid var(--decorated-zone);
-  inset-inline-end: 10px;
-  inset-block-start: 10px;
+  /* inset-inline-end: 10px;
+  inset-block-start: 10px; */
+  inset-inline-end: var(--padding);
+  inset-block-start: var(--padding);
 }
 
 .decorated-zone::after {
   border-inline-start: 1px solid var(--decorated-zone);
   border-block-end: 1px solid var(--decorated-zone);
-  inset-inline-start: 10px;
-  inset-block-end: 10px;
+  /* inset-inline-start: 10px;
+  inset-block-end: 10px; */
+  inset-inline-start: var(--padding);
+  inset-block-end: var(--padding);
 }
 
 .rec {
@@ -55,8 +59,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  inset-inline-end: 19px;
-  inset-block-start: 10px;
+  inset-inline-end: clamp(1.1875rem, 0.5911rem + 2.5445vw, 1.8125rem);
+  inset-block-start: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem);
 }
 
 .rec::before {
@@ -67,6 +71,7 @@
 
 .rec::after {
   content: "";
+  display: inline-block;
   inline-size: 9px;
   block-size: 9px;
   background: var(--accent-color, #ff0070);
@@ -168,7 +173,7 @@
 }
 
 .text-link:hover {
-  border-bottom: 1px solid var(--text-color, #f1b2ce);
+  border-block-end: 1px solid var(--text-color, #f1b2ce);
 }
 
 .text-link:focus {
@@ -219,7 +224,7 @@
 
   .header__theme-menu {
     margin-block: 182px;
-    margin-inline-end: 10px;
+    /* margin-inline-end: 10px; */
   }
 
   .header__title {
@@ -240,8 +245,6 @@
   }
 
   .rec {
-    inset-inline-end: 29px;
-    inset-block-start: 20px;
     visibility: var(--rec-visibility, visible);
   }
 
