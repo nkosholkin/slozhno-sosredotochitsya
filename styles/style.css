@@ -225,6 +225,7 @@
   .header__title {
     font-size: var(--font-size-desktop);
     margin-inline-start: -10px;
+    margin-block-start: -10px;
   }
 
   .footer__title {
@@ -235,7 +236,7 @@
     justify-self: end;
     inline-size: 364px;
     margin-inline-end: 10px;
-    margin-block: 162px 173px;
+    margin-block: 152px 173px;
   }
 
   .rec {
@@ -322,7 +323,7 @@
 
   .header__description {
     inline-size: 491px;
-    margin-block: 55px;
+    margin-block: 50px 60px;
   }
 
   .header__title {
