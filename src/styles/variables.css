@@ -4,25 +4,31 @@
 */
 
 :root {
-  --font-family: "IBM Plex mono", monospace;
+  --page-font-family: "IBM Plex mono", monospace;
+
   --font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 
   --background-color: #000028;
-  --background-image: url(../images/cover-image.png);
+  --background-image: url(../images/cover-image-dark.png);
 
   --heading-color: #db00ff;
+
+  --text-heading: #ff0070;
   --text-title: #000028;
   --text-color: #f1b2ce;
 
   --accent-color: #ff0070;
-  --text-heading: #ff0070;
   --decorated-zone: #ff0070;
 
   --decorated-zone-hover: rgb(255 0 112 / 0.4);
 
   --rec-visibility: visible;
 
-  --padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem); /*10 до 20 */
-  --padding-block: clamp(2.5rem, 1.3073rem + 5.0891vw, 3.75rem); /*40 до 60 */
+  --padding: clamp(0.625rem, 0.0286rem + 2.5445vw, 1.25rem); /*10px до 20px */
+  --padding-block: clamp(
+    2.5rem,
+    1.3073rem + 5.0891vw,
+    3.75rem
+  ); /*40px до 60px */
 }

@@ -20,6 +20,7 @@
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-concat-css": "^3.1.0",
+    "gulp-minify": "^3.1.0",
     "gulp-plumber": "^1.2.1",
     "prettier": "^3.2.5",
     "stylelint": "^16.2.1"
