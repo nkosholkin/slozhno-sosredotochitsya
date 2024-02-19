@@ -87,7 +87,7 @@
 
 .header__theme-menu-button {
   border: 1px solid transparent;
-  padding: 1.5px 13px;
+  padding: 0 13px;
   color: var(--decorated-zone, #ff0070);
   background: inherit;
   font-weight: 400;
@@ -235,7 +235,7 @@
     justify-self: end;
     inline-size: 364px;
     margin-inline-end: 10px;
-    margin-block: 162px;
+    margin-block: 162px 173px;
   }
 
   .rec {
@@ -312,6 +312,7 @@
   .header__theme-menu {
     justify-self: center;
     margin-block-start: 10px;
+    margin-inline-end: 0;
   }
 
   .header__theme-menu-list {
