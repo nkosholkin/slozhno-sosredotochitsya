@@ -19,10 +19,9 @@
   --decorated-zone: #ff0070;
 
   --background-color: #000028;
-  --background-image: url("../images/cover-image-dark.png");
+  --background-image: url(../images/cover-image-dark.png);
 
-  --decorated-zone-hover: rgba(255, 0, 112, 0.4);
+  --decorated-zone-hover: rgb(255 0 112 / 0.4);
 
   --rec-visibility: visible;
-
 }

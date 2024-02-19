@@ -3,18 +3,18 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 
+  font-family: var(--page-font-family, "IBM Plex mono", monospace);
+  color: var(--text-color, #f1b2ce);
+  font-size: 18px;
+  line-height: 130%;
+
   background-color: var(--background-color, #000028);
 
-  background-image: var(--background-image, url("../images/cover-image.png"));
+  background-image: var(--background-image, url(../images/cover-image.png));
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-  color: var(--text-color, #f1b2ce);
-  font-family: var(--page-font-family, "IBM Plex mono", monospace);
-  font-size: 18px; /* добавить в переменные */
-  line-height: 130%; /* добавить в переменные */
 }
 
 .header {
@@ -101,7 +101,7 @@
 }
 
 .header__theme-menu-button:hover {
-  border-color: var(--decorated-zone-hover, rgba(255, 0, 112, 0.4));
+  border-color: var(--decorated-zone-hover, rgb(255 0 112 / 0.4));
   cursor: pointer;
 }
 
@@ -115,7 +115,8 @@
 
 /* заголовок */
 
-.header__title, .footer__title {
+.header__title,
+.footer__title {
   color: var(--heading-color, #db00ff);
   font-family: inherit;
   font-size: var(--font-size-mobile);
@@ -217,6 +218,7 @@
 }
 
 @media (width >= 768px) {
+
   .header__theme-menu {
     margin-block: 182px;
     margin-inline-end: 10px;
@@ -309,6 +311,7 @@
 }
 
 @media (width >= 1024px) {
+
   .header__theme-menu {
     justify-self: center;
     margin-block-start: 10px;
@@ -344,5 +347,4 @@
   .main__section.collection {
     grid-template-rows: auto 260px 315px 428px;
   }
-
 }
