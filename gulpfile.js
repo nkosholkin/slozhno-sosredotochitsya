@@ -5,9 +5,12 @@ const del = require("del");
 const browserSync = require("browser-sync").create();
 const jsMinify = require('gulp-minify');
 
+var useref = require('gulp-useref');
+
 function html() {
   return gulp
     .src("src/**/*.html")
+    .pipe(useref())
     .pipe(plumber())
     .pipe(gulp.dest("dist/"))
     .pipe(browserSync.reload({ stream: true }));
@@ -44,7 +47,17 @@ function scripts() {
     .pipe(gulp.dest('dist/scripts'))
 }
 
-exports.scripts = scripts
+exports.scripts = scripts;
+
+
+function fonts() {
+  return gulp.src('src/fonts/**/*.{ttf,woff,woff2}')
+    .pipe(gulp.dest('dist/fonts'))
+    .pipe(browserSync.reload({ stream: true }));
+}
+
+exports.fonts = fonts;
+
 
 function clean() {
   return del("dist");
@@ -52,7 +65,7 @@ function clean() {
 
 exports.clean = clean;
 
-const build = gulp.series(clean, gulp.parallel(html, css, images, scripts));
+const build = gulp.series(clean, gulp.parallel(html, css, images, fonts, scripts));
 
 exports.build = build;
 
@@ -61,6 +74,7 @@ function watchFiles() {
   gulp.watch(["src/blocks/**/*.css"], css);
   gulp.watch(["src/images/**/*.{jpg,png,svg,gif,ico,webp,avif}"], images);
   gulp.watch(["src/scripts/**/*.js"], scripts);
+  gulp.watch(["src/fonts/**/*.{ttf,woff,woff2}"], fonts);
 }
 
 function serve() {
